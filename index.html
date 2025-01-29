@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Making App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Note Making Site</h1>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="left-section">
+            <button class="new-note-button" onclick="handleNewNote()">New Note</button>
+            <div class="note-input" id="noteInput">
+                <input type="text" id="title" placeholder="Title">
+                <textarea id="content" placeholder="Write your note here..."></textarea>
+                <button onclick="addNote()">Save Note</button>
+            </div>
+            <div class="drafts" id="draftsContainer">
+                <h2>Drafts</h2>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="notes" id="notes"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
